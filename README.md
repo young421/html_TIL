@@ -35,7 +35,7 @@
 ### 한 번만 작성하면 끝인 깃 명령어
 * `git config` 이름, 이메일 설정
 * `git init` 저장소 설정
-* `git branch -M main` 저장소이름 설정
+* `git branch -M main` 저장소 이름 설정
 * `git remote add origin` 저장소 주소 설정
 ### 작업 시 깃허브 업로드를 위해 반복해야 하는 깃 명령어
 * `git add .`
