@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="./images/free-icon-pawprint-7823011.png" type="image/x-icon">
+    <title>목록태그 | 레이아웃 기초</title>
+</head>
+<body>
+    <h1>목록태그</h1>
+    <h2>순서가 있는 목록</h2>
+    <!-- 네이버 웹툰 순위 -->
+    <div id="webtoon">
+        <div class="title">
+            <h2>20대 실시간 인기만화</h2>
+            <div class="right_btn">
+                <a href="#"><img src="" alt="이전 순위보기"></a>
+                <a href="#"><img src="" alt="다음 순위보기"></a>
+            </div>
+        </div>
+        <div class="tab title">
+            <a href="#">남자</a>
+            <a href="#">여자</a>
+        </div>
+        <ol class="ranking">
+            <li>
+                <p class="num">1</p>
+                <div class="info">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="details">
+                        <h3>외모지상주의</h3>
+                        <p class="author">박태준</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <span class="arrow">-</span>
+                    <span class="num">-</span>
+                </div>
+            </li>
+            <li>
+                <p class="num">1</p>
+                <div class="info">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="details">
+                        <h3>외모지상주의</h3>
+                        <p class="author">박태준</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <span class="arrow">-</span>
+                    <span class="num">-</span>
+                </div>
+            </li>
+            <li>
+                <p class="num">1</p>
+                <div class="info">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="details">
+                        <h3>외모지상주의</h3>
+                        <p class="author">박태준</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <span class="arrow">-</span>
+                    <span class="num">-</span>
+                </div>
+            </li>
+            <li>
+                <p class="num">1</p>
+                <div class="info">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="details">
+                        <h3>외모지상주의</h3>
+                        <p class="author">박태준</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <span class="arrow">-</span>
+                    <span class="num">-</span>
+                </div>
+            </li>
+            <li>
+                <p class="num">1</p>
+                <div class="info">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="details">
+                        <h3>외모지상주의</h3>
+                        <p class="author">박태준</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <span class="arrow">-</span>
+                    <span class="num">-</span>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <h2>순서가 없는 목록</h2>
+    <!-- 네이버 블로그 추천 -->
+    <div id="recommend">
+        <div class="title">
+            <a href="#">영화</a>
+            <a href="#">자동차</a>
+            <a href="#" class="active">동물공감</a>
+        </div>
+        <ul class="contents">
+            <li>
+                <a href="#">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="list">
+                        <p class="sub_title">시골개 1미터의 삶</p>
+                        <h2>불나자 목줄 끊고 탈출한 개가 만나게 된 현실</h2>
+                        <p class="author">동그람이</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="list">
+                        <p class="sub_title">시골개 1미터의 삶</p>
+                        <h2>불나자 목줄 끊고 탈출한 개가 만나게 된 현실</h2>
+                        <p class="author">동그람이</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="img"><img src="" alt=""></p>
+                    <div class="list">
+                        <p class="sub_title">시골개 1미터의 삶</p>
+                        <h2>불나자 목줄 끊고 탈출한 개가 만나게 된 현실</h2>
+                        <p class="author">동그람이</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <!-- 목록 안에 목록 형태로 구성된 메뉴 구조 -->
+    <ul class="gnb">
+        <li>
+            <a href="#">패션의류/잡화</a>
+            <ul class="lnb">
+                <li><a href="#">여성의류</a></li>
+                <li><a href="#">남성의류</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">뷰티</a>
+            <ul class="lnb">
+                <li><a href="#">여성의류</a></li>
+                <li><a href="#">남성의류</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
