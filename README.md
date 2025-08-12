@@ -89,4 +89,3 @@
 * `git clone 주소 붙여넣기`
 ### gitHub 수정된 작업물 내려 받기
 * `git pull origin main`
-집/ 학원 저장 잘 하기
