@@ -97,3 +97,15 @@
 2. html 파일 head 안 `link:css` 자동 완성 작성하고 위 1번 파일 연결하기
 3. (html 작성 완료 기준) 부모 -> 자식 순서대로 모든 선택자 작성하기 `{}` 중괄호 비운 상태로 
 4. 모든 선택자 작성 후 `{속성:값;}` 추가로 작성하며 디자인 진행하기
+# CSS 글자 속성
+## font-family
+* `font-family:'대표 글꼴', 후보글꼴, 글꼴유형`
+* 글꼴유형 : sans-serif, serif
+* 글꼴명에 한글, 특수문자, 공백이 있을 경우 '' 따옴표 묶기
+* 윈도우 기본 설치 글꼴 : 굴림, 고딕, 바탕, 궁서
+*  **대표 글꼴이 설치가 필요한 글꼴일 경우** : 해당 글꼴 파일을 웹주소로 연결해서 누구나 볼 수 있게 설정한다.
+* `<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />`
+## font-size
+* 16px 평균값 기준으로 피그마, 포토샵 등에서 디자인한 글자 크기를 `rem, em` 단위로 변환해서 작성한다.
+* 16px == 1em or 1rem
+* `https://nekocalc.com/px-to-em-converter` 글자 변환 사이트

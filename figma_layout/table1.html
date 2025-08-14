@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>서점재고표 | 알라딘</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <style>
+        #book {
+            width:682px;
+            border-radius:20px;
+            overflow: hidden;
+        }
+        #book thead {
+            background-color: #FF0066;
+        }
+        #book thead tr {}
+        #book thead tr th {
+            color: #fff;
+            padding-top: 20px; padding-bottom: 20px;
+            font-weight: 700; font-size:1.125rem;
+        }
+        /* 종류~비고 w100px 그룹 */
+        /* #book thead tr th:nth-child(2),
+        #book thead tr th:nth-child(3),
+        #book thead tr th:nth-child(4),
+        #book thead tr th:last-child {width: 100px;} */
+        /* 종류~비고 w100px 형제 */
+        #book thead tr th:first-child ~ th {width: 100px;}
+        /* tbody */
+        #book tbody {}
+        #book tbody tr {
+            background-color: #F2F2F2;
+        }
+        #book tbody tr:nth-child(2) {border: 2px solid #FF0066 ;}
+        #book tbody tr:nth-child(2) th {color: #FF0066;}
+        #book tbody tr:nth-child(2) td {color: #FF0066;}
+        #book tbody tr:nth-child(2),
+        #book tbody tr:nth-child(4) {background-color: #E8E8E8;}
+        #book tbody tr th {
+            padding-top: 16px; padding-bottom: 16px;
+            padding-left: 16px;
+            text-align: left;
+            font-weight: 500;
+        }
+        #book tbody tr td {text-align: center; font-weight: 500;}
+    </style>
+</head>
+<body>
+    <table id="book">
+        <thead>
+        <tr>
+            <th>제목</th>
+            <th>종류</th>
+            <th>가격</th>
+            <th>수량</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><!-- 1행 -->
+            <th>사망 플래그</th>
+            <td>도서</td>
+            <td>50,000</td>
+            <td>300</td>
+            <td>재고없음</td>
+        </tr>
+        <tr><!-- 2행 -->
+            <th>설마 죽기야 하겠어</th>
+            <td>도서</td>
+            <td>40,000</td>
+            <td>212</td>
+            <td>-</td>
+        </tr>
+        <tr><!-- 3행 -->
+            <th>이번이 정말 마지막이야</th>
+            <td>도서</td>
+            <td>50,000</td>
+            <td>300</td>
+            <td>재고없음</td>
+        </tr>
+        <tr><!-- 4행 -->
+            <th>곧 돌아올게 기다려</th>
+            <td>도서</td>
+            <td>40,000</td>
+            <td>300</td>
+            <td>-</td>
+        </tr>
+        <tr><!-- 5행 -->
+            <th>곧 생일이라 드레스를 사주기로 했어</th>
+            <td>도서</td>
+            <td>50,000</td>
+            <td>300</td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
