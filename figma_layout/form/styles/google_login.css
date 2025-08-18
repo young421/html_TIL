@@ -1,0 +1,67 @@
+/* 외부 스타일 시트(HTML 공유 가능) */
+body {background-color: #222;}
+#wrap {
+    background-color: #fff;
+    width: 440px; height:100vh;
+    padding: 179px 15px 0;
+    /* w값 설정된 바깥쪽 레이아웃 요소 가운데 배치 */
+    margin: 0 auto;
+}
+#wrap h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin:0 0 30px;
+} 
+#wrap > p {margin:0 0 30px;}
+#wrap #login_frm {}
+/* 아이디, 비번 */
+#wrap #login_frm .id_pw_group {margin: 0 0 40px;}
+#wrap #login_frm .id_pw_group dl {}
+#wrap #login_frm .id_pw_group dl dt {
+    font-size: 1.25rem; font-weight: 700;
+    margin:0 0 20px;
+}
+#wrap #login_frm .id_pw_group dl dd {}
+#wrap #login_frm .id_pw_group dl dd:nth-child(2) {margin:0 0 40px;}
+#wrap #login_frm .id_pw_group dl dd .id_pw {
+    /* 입력 데이터 글자 디자인 정보 */  
+    font-size: 0.875rem; /* 14px */
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 15px;
+    display: block; width: 100%;
+} /* 공통 */
+#wrap #login_frm .id_pw_group dl dd .id_pw::placeholder {color:#aaa} /* 공통 안내문(palceholder)    */
+#wrap #login_frm .id_pw_group dl dd #user_email_id {} /* 개별 */
+#wrap #login_frm .id_pw_group dl dd #user_pw {} /* 개별 */
+#wrap #login_frm .id_pw_group .error {
+    font-size: 0.875rem; font-weight: 600;
+    color: #f00; margin-top: 40px;
+    /* 초반 숨기기 */
+    display:none;
+}
+/* 버튼, 가입 */
+#wrap #login_frm .btn_search_group {}
+#wrap #login_frm .btn_search_group h2 {
+    font-size: 1.25rem; font-weight: 700;
+    margin:0 0 20px;
+}
+#wrap #login_frm .btn_search_group p {}
+#wrap #login_frm .btn_search_group h2+p {margin: 0 0 20px;}
+#wrap #login_frm .btn_search_group p:nth-child(4) {margin: 0 0 30px;}
+#wrap #login_frm .btn_search_group p .btn {
+    font-weight: 700;
+    /* display:inline-block */
+    display:block; width: 100%;
+    padding:15px 0; /* 상하(15) 좌우(0) */
+    border-radius: 10px;
+} /* a와 버튼 공통 */
+#wrap #login_frm .btn_search_group p #login_btn {
+    background-color: #000; color: #fff;
+} /* 로그인 */
+#wrap #login_frm .btn_search_group p #sign_google {
+    border: 1px solid #aaa;
+    text-align: center;
+} /* 구글 */
+#wrap #login_frm .btn_search_group p.account {font-size: 0.875rem; text-align: center;}
+#wrap #login_frm .btn_search_group p.account .sign_up {font-weight: 700;}

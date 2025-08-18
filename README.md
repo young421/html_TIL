@@ -109,3 +109,17 @@
 * 16px 평균값 기준으로 피그마, 포토샵 등에서 디자인한 글자 크기를 `rem, em` 단위로 변환해서 작성한다.
 * 16px == 1em or 1rem
 * `https://nekocalc.com/px-to-em-converter` 글자 변환 사이트
+## HTML - Form
+* 사용자 입력 / 선택 요소 1개라도 등장 시 전체 영역을 `form` 묶어주기 **action, method, id** 필수!
+* 폼 안쪽 양식 종류가 그룹 별로 2개 이상 구분될 경우 `fieldset, legend` 작성한다.
+* `fieldset` div처럼 그룹 역할이므로 id 또는 class를 함께 작성해야 한다.
+* `fieldset` 생략하고 대신 `div, ul, ol, dl` 등 다른 그룹으로 대체하는 것도 가능하다.
+### form - input
+* `<input type="종류" name="데이터명(중복x)" id="데이터명(중복x) class="공통디자인명">`
+* `value` 속성은 필요한 경우만 작성, 쇼핑몰 수량 1 기본값
+## CSS Margin & Padding 작성 방법
+* `1px 2px 3px 4px` : 위 -> 오른쪽 -> 아래 -> 왼쪽
+* `1px` : 상하좌우 값 동일
+* `1px 2px` : 상하(1) 좌우(2)
+* `1px 0 2px` : 상(1) 좌우(0) 하(2)
+* Margin 겹침 현상 주의!!
