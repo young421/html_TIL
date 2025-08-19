@@ -123,3 +123,11 @@
 * `1px 2px` : 상하(1) 좌우(2)
 * `1px 0 2px` : 상(1) 좌우(0) 하(2)
 * Margin 겹침 현상 주의!!
+# Form 입렵과 선택 요소
+## `<input type="">`
+* type=text : 입력요소 / name(데이터구분용) / value(초기값)
+* type=checkbox : 선택요소 / name(그룹용) / value(데이터구분용)
+* 입력 요소 종류 : text, password, mail, search, number 등
+* 선택 요소 종류 : checkbox, radio, select, option
+* 데이터구분용은 id처럼 해당 데이터만을 구분하는 중복되지 않는 이름을 설정한다.
+* 그룹용은 클래스와 같이 2개 이상의 요소를 묶어주는 반복이름개념으로 사용한다.
