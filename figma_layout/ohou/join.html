@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>회원가입 | 오늘의 집</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/join.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="오늘의 집"></a></h1>
+        <h1>회원가입</h1>
+        <p>sns계정으로 간편하게 회원가입</p>
+        <div class="sns">
+            <a href="#"><img src="./images/facebook.png" alt="페이스북 아이디로 회원가입"></a>
+            <a href="#"><img src="./images/kakao.png" alt="카카오톡 아이디로 회원가입"></a>
+            <a href="#"><img src="./images/naver.png" alt="네이버 아이디로 회원가입"></a>
+        </div>
+        <form action="#" method="post" id="join_frm">
+            <fieldset class="contents">
+                <legend>가입정보</legend>
+                <dl class="info">
+                    <dt>이메일</dt>
+                    <dd><input type="email" name="user_mail" id="user_mail" class="input_de" placeholder="이메일"></dd>
+                    <dd>@</dd>
+                    <dt>비밀번호</dt>
+                    <dd>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</dd>
+                    <dd><input type="pw" name="user_pw" id="user_pw" class="input_de" placeholder="비밀번호"></dd>
+                    <dt>비밀번호확인</dt>
+                    <dd><input type="pw" name="user_pw" id="user_pw" class="input_de" placeholder="비밀번호"></dd>
+                </dl>
+            </fieldset>
+            <fieldset class="law">
+                <legend>가입약관</legend>
+            </fieldset>
+            <button type="submit" id="join_btn">로그인</button>
+            <p>이미 아이디가 있으신가요?<a href="./login.html" class="login">로그인</a></p>     
+        </form>
+    </div>
+</body>
+</html>
