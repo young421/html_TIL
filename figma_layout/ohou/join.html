@@ -10,6 +10,7 @@
     <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/join.css">
 </head>
 <body>
@@ -27,20 +28,65 @@
                 <legend>가입정보</legend>
                 <dl class="info">
                     <dt>이메일</dt>
-                    <dd><input type="email" name="user_mail" id="user_mail" class="input_de" placeholder="이메일"></dd>
-                    <dd>@</dd>
+                    <dd>
+                        <input type="email" name="user_mail" id="user_mail" placeholder="이메일">
+                        <span>@</span>
+                        <select name="email_adr_select">
+                            <option value="none">선택해주세요</option>
+                            <option value="naver">naver.com</option>
+                            <option value="google">google.com</option>
+                        </select>
+                    </dd>
+                    <dd><button type="button" id="email_certified_btn">이메일 인증하기</button></dd>
                     <dt>비밀번호</dt>
                     <dd>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</dd>
-                    <dd><input type="pw" name="user_pw" id="user_pw" class="input_de" placeholder="비밀번호"></dd>
+                    <dd><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호"></dd>
                     <dt>비밀번호확인</dt>
-                    <dd><input type="pw" name="user_pw" id="user_pw" class="input_de" placeholder="비밀번호"></dd>
+                    <dd><input type="password" name="user_pw_re" id="user_pw_re" placeholder="비밀번호"></dd>
+                    <dt>닉네임</dt>
+                    <dd>다른 유저와 겹치지 않도록 입력해주세요.(2~20자)</dd>
+                    <dd><input type="text" name="user_nick" id="user_nick" placeholder="별명(2~20자)"></dd>
                 </dl>
             </fieldset>
             <fieldset class="law">
                 <legend>가입약관</legend>
+                <dl>
+                    <dt>약관동의</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="all" value="all">
+                                <label for="all">전체동의 <em>선택항목에 대한 동의 포함</em></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="year14" value="year14">
+                                <label for="year14">만 14세 이상입니다<em class="essential">(필수)</em></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="use" value="use">
+                                <label for="use">이용약관<em class="essential">(필수)</em></label>
+                                <a href="#" class="more"><img src="./images/arrow_forward_ios.png" alt="이용약관 더보기"></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="collection" value="collection">
+                                <label for="collection">개인정보수집 및 이용동의<em class="essential">(선택)</em></label>
+                                <a href="#" class="more"><img src="./images/arrow_forward_ios.png" alt="이용약관 더보기"></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="marketing" value="marketing">
+                                <label for="marketing">개인정보 마케팅 활용 동의<em class="choice">(선택)</em></label>
+                                <a href="#" class="more"><img src="./images/arrow_forward_ios.png" alt="이용약관 더보기"></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="event" value="event">
+                                <label for="event">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<em class="choice">(선택)</em></label>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
             </fieldset>
-            <button type="submit" id="join_btn">로그인</button>
-            <p>이미 아이디가 있으신가요?<a href="./login.html" class="login">로그인</a></p>     
+            <button type="submit" id="join_btn">회원가입하기</button>
+            <p>이미 아이디가 있으신가요?<a href="./login.html" class="login_y">로그인</a></p>     
         </form>
     </div>
 </body>

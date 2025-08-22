@@ -1,0 +1,25 @@
+#wrap .sns {
+    text-align: center;
+    margin: 14px 0 0;
+}
+#wrap .sns a {}
+#wrap .sns a:nth-child(2) {margin: 0 20px;}
+#wrap .sns a img {}
+#wrap #login_frm {}
+#wrap #login_frm .info {}
+#wrap #login_frm .info dt {
+    font-size: 1.063rem; font-weight: 500;
+    margin: 0 0 10px;
+}
+#wrap #login_frm .info dd {margin: 0 0 22px;}
+#wrap #login_frm .info dd input[name^=user] {
+    width: 100%; padding: 10px;
+    font-size: 0.875rem;
+    border-radius: 3px; border: 1px solid #bbb;
+}/* 공통클래스 */ 
+#wrap #login_frm .info dd #user_id {}
+#wrap #login_frm .info dd #user_pw {}
+#wrap #login_frm #login_btn {}
+#wrap #login_frm > p {margin-top: 22px; text-align: center; font-size: 0.875rem;}
+#wrap #login_frm > p a {font-weight: 600; text-decoration: underline;}
+/* underline 속성은 색상변경불가, 여백설정불가 */

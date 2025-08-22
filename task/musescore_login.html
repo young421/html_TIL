@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Document</title>
+    <title>로그인 | 뮤즈스코어</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/musescore_login.css">
 </head>
 <body>
-    
+    <div id="wrap">
+        <h1>Log in to Musescore</h1>
+        <p>Don't have an account? <em>Sign Up</em></p>
+        <div class="sns">
+            <a href="#">Continue with Google</a>
+            <a href="#">페이스북</a>
+            <a href="#">애플</a>
+        </div>
+        <em class="line">or</em>
+        <form action="#" method="post" id="login_frm">
+            <dl>
+                <dt>Email or username</dt>
+                <dd><input type="text" name="user_id" id="user_id" class="id_pw" placeholder=""></dd>
+                <dt>Email or username</dt>
+                <dd><input type="password" name="usre_pw" id="user_pw" class="id_pw" placeholder=""></dd>
+            </dl>
+        </form>
+    </div>
 </body>
 </html>
