@@ -15,20 +15,26 @@
 <body>
     <div id="wrap">
         <h1>Log in to Musescore</h1>
-        <p>Don't have an account? <em>Sign Up</em></p>
+        <p>Don't have an account? 
+            <a href="#" class="sign_up">Sign Up</a>
+        </p>
         <div class="sns">
-            <a href="#">Continue with Google</a>
-            <a href="#">페이스북</a>
-            <a href="#">애플</a>
+            <a href="#" class="google"><img src="./images/google-login.png" alt="구글" class="google_link">Continue with Google</a>
+            <a href="#"><img src="./images/fb-login.svg" alt="페이스북"></a>
+            <a href="#"><img src="./images/apple-login.svg" alt="애플"></a>
         </div>
         <em class="line">or</em>
         <form action="#" method="post" id="login_frm">
             <dl>
                 <dt>Email or username</dt>
                 <dd><input type="text" name="user_id" id="user_id" class="id_pw" placeholder=""></dd>
-                <dt>Email or username</dt>
+                <dt>password</dt>
+                <dd>
+                    <a href="#" class="forgot_pw">Forgot your password?</a>
+                </dd>
                 <dd><input type="password" name="usre_pw" id="user_pw" class="id_pw" placeholder=""></dd>
             </dl>
+            <button type="submit" id="login_btn">Log in</button>
         </form>
     </div>
 </body>

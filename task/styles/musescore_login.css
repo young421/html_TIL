@@ -1,0 +1,41 @@
+#wrap {
+    border: 3px solid aqua;
+    width: 320px; margin: 0 auto;
+    padding: 25px 15px 0;
+}
+#wrap h1 {
+    font-size: 1.75rem; font-weight: 700; text-align: center;
+}
+#wrap p {font-size: 0.875rem; color:#777; text-align: center; margin-top: 10px;}
+#wrap p a.sign_up {color: #6B5DFE;}
+#wrap .sns {}
+#wrap .sns a {}
+#wrap .sns .google { background-color: yellow; display: block;
+    border: 1px solid #fff; border-radius: 23px;
+    width: 185px;
+}
+#wrap .sns a img .google_link {float: left;}
+#wrap .sns a img {width: 35px; height: 35px;}
+#wrap em.line {}
+/* -------------------- 로그인 시작 */
+#wrap #login_frm {}
+#wrap #login_frm dl {}
+#wrap #login_frm dl dt {
+    font-size:0.875rem; font-weight: 600; float: left;
+}
+#wrap #login_frm dl dd {}
+#wrap #login_frm dl dd input[id^=user] {
+    border: 1px solid #aaa; width: 100%;
+    padding: 7px; font-size: 0.875rem;
+}/* 공통 */
+#wrap #login_frm dl dd #user_id {}/* 아이디 */
+#wrap #login_frm dl dd #user_pw {}/* 비밀번호 */
+#wrap #login_frm dl dd a.forgot_pw {
+    color: #6B5DFE; float: right; font-size: 0.875rem;
+}
+#wrap #login_btn {
+    font-size: 0.875rem; 
+    border: 1px solid #fff; border-radius: 20px;
+    width: 290px; padding: 10px; 
+    background-color: #f5f5f5; color: #777;
+}
