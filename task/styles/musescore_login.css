@@ -9,17 +9,18 @@
 #wrap p {font-size: 0.875rem; color:#777; text-align: center; margin: 10px 0 15px;}
 #wrap p a.sign_up {color: #6B5DFE;}
 #wrap .sns {}
-#wrap .sns a {}
-#wrap .sns .google { background-color: #6B5DFE; display: block; color: #fff;
+#wrap .sns a { background-color: palegreen;}
+#wrap .sns .google { background-color: #6B5DFE; color: #fff;
     border: 1px solid #fff; border-radius: 23px;
     width: 185px; font-size: 0.875rem;
 }
+#wrap .sns a .fb {}
+#wrap .sns a .apple {}
 #wrap .sns a img {width: 35px; height: 35px;}
-#wrap .sns a img .google_link {float: left;}
 #wrap em.line { background-color: pink;
-    text-align: center; display: block;
+    text-align: center; display: inline-block;
     border-top: 1px solid #000;
-} 
+} /* 중간선 */
 /* -------------------- 로그인 시작 */
 #wrap #login_frm {}
 #wrap #login_frm dl {}
