@@ -1,0 +1,51 @@
+/* index 파일에만 존재하는 디자인 */
+#wrap main .visual_bnr_wrap {}
+/* 공통 */
+#wrap main .visual_bnr_wrap section {
+    background-size: cover;
+    height: 843px;
+}
+#wrap main .visual_bnr_wrap section h2 {
+    font-size: var(--text-title70);
+    font-weight: var(--weight-bold);
+    line-height: var(--line-title);
+    letter-spacing: var(--letter-minus2);
+}
+#wrap main .visual_bnr_wrap section p {
+    font-size: var(--text-contents21);
+    line-height: var(--line-contents);
+    letter-spacing: var(--letter-minus2);
+    color: var(--color-gray4);
+}
+/* --------------------1 배너 */
+#wrap main .visual_bnr_wrap .bnr1 {
+    background-image: url(../images/row1_bnr1.jpg);
+}
+#wrap main .visual_bnr_wrap .bnr1 h2 {
+    color:var(--color-white);
+}
+#wrap main .visual_bnr_wrap .bnr1 p {}
+/* --------------------2 배너 */
+#wrap main .visual_bnr_wrap .bnr2 {
+    background-image: url(../images/row1_bnr2.jpg);
+}
+#wrap main .visual_bnr_wrap .bnr2 h2 {
+    color: var(--color-title-brown);
+}
+#wrap main .visual_bnr_wrap .bnr2 p {}
+/* ---------------------3 배너 */
+#wrap main .visual_bnr_wrap .bnr3 {
+    background-image: url(../images/row1_bnr3.jpg);
+}
+#wrap main .visual_bnr_wrap .bnr3 h2 {
+    color: var(--color-title-green);
+}
+#wrap main .visual_bnr_wrap .bnr3 p {}
+/* ----------------------4 배너 */
+#wrap main .visual_bnr_wrap .bnr4 {
+    background-image: url(../images/row1_bnr4.jpg);
+}
+#wrap main .visual_bnr_wrap .bnr4 h2 {
+    color: var(--color-title-coral);
+}
+#wrap main .visual_bnr_wrap .bnr4 p {}

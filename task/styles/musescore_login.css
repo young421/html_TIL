@@ -17,10 +17,10 @@
 #wrap .sns a .fb {}
 #wrap .sns a .apple {}
 #wrap .sns a img {width: 35px; height: 35px;}
-#wrap em.line { background-color: pink;
-    text-align: center; display: inline-block;
-    border-top: 1px solid #000;
-} /* 중간선 */
+#wrap .line {background-color: pink;}
+#wrap .line::after {width: 100%; height: 1px; background-color: #000;}
+#wrap .line em {display: block; background-color: #fff;}
+ /* 중간선 */
 /* -------------------- 로그인 시작 */
 #wrap #login_frm {}
 #wrap #login_frm dl {}
