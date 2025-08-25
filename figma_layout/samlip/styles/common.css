@@ -56,8 +56,10 @@
     display: flex; flex-wrap: row nowrap;
     align-items: center;
 }
-#wrap header .right_menu > li {
-    display: flex; 
+#wrap header .right_menu > li {}
+#wrap header .right_menu > li:first-child {
+    display: flex; /* customer와 구분선의 부모 */
+    flex-flow: row nowrap;
 }
 #wrap header .right_menu > li:first-child::after {
     content: ''; display: block;
