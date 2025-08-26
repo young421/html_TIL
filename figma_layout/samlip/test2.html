@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        main {
+            width: 600px; height: 400px;
+            background-color: skyblue;
+            position: relative;
+        }
+        main section {
+            width: 300px; height: 150px;
+            background-color: lightgreen;
+            position: relative;
+        }
+        main section .box {
+            border: 3px solid #000;
+            font-size: 2rem;
+            width: 50px; height: 50px;
+        }
+        main section .box1 {}
+        main section .box2 {
+            position: relative;/* 필수! */
+            left: 30px;/* 선택 */
+            top: 10px;
+        }
+        main section .box3 {
+            position: absolute;/* 부모 기준으로 위치 설정 */
+            /* 부모 설정이 position으로 따로 설정 안 되어있으면 body를 부모로 인식한다 */
+            right: 0; bottom: 0;
+        }
+        main section .box4 {
+            position: relative;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+        </section>
+    </main>
+</body>
+</html>
