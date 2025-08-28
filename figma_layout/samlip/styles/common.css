@@ -22,11 +22,13 @@
     /* 색상(테두리색, 배경색, 글자색 등) */
     --color-white:#fff;
     --color-black:#000;
+    --color-gray12:#121212;
     --color-gray4:#444;
     --color-graya:#aaa;
     --color-grayd:#ddd;
     --color-grayfc:#fcfcfc;
     --color-grayf1:#f1f1f1;
+    --color-gray80:#808080;
     --color-title-brown:#642c10;
     --color-title-green:#4a6512;
     --color-title-coral:#d43936;
@@ -141,3 +143,47 @@ body,html {scroll-behavior: smooth;}
 #wrap header .right_menu > li:nth-child(2) .lang_select a.cn {}
 /* 메인 */
 #wrap main {}
+/* ------------------------------------------------ 푸터 */
+#wrap footer {padding: 50px 80px;}
+#wrap footer .ft_top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+#wrap footer .ft_top .menu {
+    display: flex; flex-flow: row nowrap; align-items: center; gap: 40px;
+}
+#wrap footer .ft_top .menu a {font-size: var(--text-sub14); color: #676767;}
+#wrap footer .ft_top .menu a:nth-child(1) {color: #138FBF; font-weight: var(--weight-bold);}
+#wrap footer .ft_top .menu a:nth-child(2) {color: #DA2128; font-weight: var(--weight-bold);}
+#wrap footer .ft_top .menu a img {}
+#wrap footer .ft_top .site_all {
+    display: flex; flex-flow: row nowrap; gap: 10px;
+}
+#wrap footer .ft_top .site_all li {position: relative;}
+#wrap footer .ft_top .site_all li p {
+    background-image: url(../images/down_arrow.png);
+    background-repeat: no-repeat; background-position: 90% center;
+    border: 1px solid var(--color-gray80); font-size: var(--text-sub14);
+    line-height: 40px; padding:0 10px;
+}
+#wrap footer .ft_top .site_all li:nth-child(1) p {width: 174px;}
+#wrap footer .ft_top .site_all li:nth-child(2) p {width: 150px;}
+#wrap footer .ft_top .site_all li .family_list {
+    position:absolute; background: var(--color-white);
+    width: 100%; /* absolute의 부모relatice의 너비만큼 차지하기 */
+    bottom: 40px; height: 250px; overflow: auto;
+    border: 1px solid var(--color-gray4);
+    display: none;
+} 
+/* 패밀리 사이트에 마우스 올리 시 패밀리 사이트(서브) 보이기 */
+#wrap footer .ft_top .site_all li:nth-child(1):hover .family_list {display: block;}
+#wrap footer .ft_top .site_all li .family_list > li {padding: 10px;}
+#wrap footer .ft_top .site_all li .family_list > li a {}
+#wrap footer .ft_top .site_all li .sitemap_wrap {display: none;} /* 초기 숨기기 */
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents  {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents h2 {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents .close {}
+#wrap footer .ft_btm {
+    font-size: var(--text-sub14); color: var(--color-gray80);
+}
+#wrap footer .ft_btm address {padding: 15px 0; line-height: var(--line-contents);}
+#wrap footer .ft_btm p {padding: 15px 0;}
