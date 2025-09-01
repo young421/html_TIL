@@ -1,0 +1,29 @@
+/* 태블릿 */
+@media screen and (max-width:1199px) {
+    #wrap header .header_contents {padding: 0 20px; position: relative;}
+    #wrap main #slide_wrap {margin: 0 20px;}
+    #wrap main .info a:nth-last-child(1),
+    #wrap main .info a:nth-last-child(2) {display: none;}
+}/* 768~1199 */
+/* 모바일 */
+@media screen and (max-width:767px) {
+    #wrap header .header_contents > nav {display: none;}
+    #wrap header .header_contents .m_nav {display: block;}
+    #wrap header .header_contents .m_nav > nav {
+        z-index: 500;
+        background: lightblue;
+        position: absolute; top: 64px; right: 0;
+        width: 226px; 
+        /* height: 100vh; */
+        /* height:calc(값 연산자 값); */
+        /* 서로 다른 단위를 계산할 때 사용하는 함수 calc() */
+        /* height:calc((100vh - 64px) / 3); */
+        height:calc(100vh - 64px);
+        display: flex; flex-flow: column nowrap; gap: 20px;
+        align-items: center; padding-top: 20px;
+    }
+    #wrap main #slide_wrap {margin:0; height: 268px;}
+    #wrap main .info {height: 130px;}
+    #wrap main .info a {width: 40px; height: 40px; line-height: 40px;}
+    #wrap main .info a:hover {width: 80px; height: 80px; line-height: 80px;}
+}/* 320~767 */

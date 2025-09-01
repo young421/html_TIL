@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>포인핸드</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/pawinhand.css">
+    <link rel="stylesheet" href="./styles/pawin_responsive.css">
+</head>
+<body>
+    <div id="wrap">
+        <header><!-- 그림자bg -->
+            <div class="header_contents"><!-- 1200w -->
+                <h1><a href="#">PAWINHAND</a></h1>
+                <nav><!-- PC~tablet 보이는 nav -->
+                    <a href="#">포인핸드란?</a>
+                    <a href="#">입양문의</a>
+                    <a href="#">보호소오는길</a>
+                    <a href="#">초보집사 도움말</a>
+                    <a href="#">행사/이벤트</a>
+                </nav>
+                <div class="m_nav"> <!-- 모바일출력요소 -->
+                    <a href="#">전체메뉴</a>
+                    <!-- 모바일 전체메뉴 클릭 시 호출 nav -->
+                    <nav>
+                        <a href="#">포인핸드란?</a>
+                        <a href="#">입양문의</a>
+                        <a href="#">보호소오는길</a>
+                        <a href="#">초보집사 도움말</a>
+                        <a href="#">행사/이벤트</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- 1행 광고 -->
+            <div id="slide_wrap">
+                <!-- 6개광고 -->
+                <div class="slide_container">
+                    <div class="slide slide1 active">slide1</div>
+                    <div class="slide slide2">slide2</div>
+                    <div class="slide slide3">slide3</div>
+                    <div class="slide slide4">slide4</div>
+                    <div class="slide slide5">slide5</div>
+                    <div class="slide slide6">slide6</div>
+                </div>
+                <!-- 좌우버튼 -->
+                <a href="#" class="prev">이전</a>
+                <a href="#" class="next">다음</a>
+                <!-- 페이지번호 -->
+                <div class="pagenation">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                </div>
+            </div>
+            <!-- 2행 동물 소개 -->
+            <div class="info">
+                <a href="#">1</a>   
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#" class="active">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+            </div>
+            <!-- 3행 입양문의 -->
+            <div class="inquiry">
+                <h2>입양문의</h2>
+                <form action="#" method="post" id="adoption_frm">
+                    <input type="text" name="name" id="name" placeholder="이름">
+                    <input type="number" name="phone" id="phone" placeholder="전화번호">
+                    <textarea name="content" id="content" placeholder="문의사항"></textarea>
+                    <button type="button" id="inquiry_btn">문의하기</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+#wrap {}
+#wrap header {
+    box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+}
+#wrap header .header_contents {
+    max-width: 1200px; height: 64px; margin: 0 auto;
+    background-color: aqua;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap header .header_contents h1 {}
+#wrap header .header_contents h1 a {}
+#wrap header .header_contents > nav {}
+#wrap header .header_contents > nav a {margin-left: 20px;}
+#wrap header .header_contents > nav a:hover {font-weight: 700;}
+#wrap header .header_contents .m_nav {display: none;}
+#wrap header .header_contents .m_nav > a {}
+#wrap header .header_contents .m_nav > nav {}
+#wrap header .header_contents .m_nav > nav a {}
+/* ------------------------------------- main */
+#wrap main {}
+/* ------------------------------------- main 1행 광고 */
+#wrap main #slide_wrap {
+    max-width: 1200px; overflow: hidden; margin: 0 auto;
+    position: relative; 
+}
+#wrap main #slide_wrap .slide_container {
+    display: flex; width:max-content;
+}
+#wrap main #slide_wrap .slide_container .slide {
+    height: 650px; max-width:1200px; width: 1200px;
+    background-size: cover;
+    background-position: center;
+}
+#wrap main #slide_wrap .slide_container .slide1 {background-image: url(https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fCVFQSVCMyVBMCVFQyU5NiU5MSVFQyU5RCVCNHxlbnwwfDB8MHx8fDA%3D);}
+#wrap main #slide_wrap .slide_container .slide2 {background-image: url(https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8JUVBJUIzJUEwJUVDJTk2JTkxJUVDJTlEJUI0fGVufDB8MHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide3 {background-image: url(https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8JUVBJUIzJUEwJUVDJTk2JTkxJUVDJTlEJUI0fGVufDB8MHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide4 {background-image: url(https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fCVFQSVCMyVBMCVFQyU5NiU5MSVFQyU5RCVCNHxlbnwwfDB8MHx8fDA%3D);}
+#wrap main #slide_wrap .slide_container .slide5 {background-image: url(https://plus.unsplash.com/premium_photo-1707353401897-da9ba223f807?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8JUVBJUIzJUEwJUVDJTk2JTkxJUVDJTlEJUI0fGVufDB8MHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide6 {background-image: url(https://plus.unsplash.com/premium_photo-1677545183884-421157b2da02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVBJUIzJUEwJUVDJTk2JTkxJUVDJTlEJUI0fGVufDB8MHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .active {}
+#wrap main #slide_wrap .prex {left: 0;}
+#wrap main #slide_wrap .next {right: 0;}
+#wrap main #slide_wrap .prev, #wrap main #slide_wrap .next {
+    position: absolute; top: 45%;
+}
+#wrap main #slide_wrap .pagenation {
+    background-color: yellow;
+    position: absolute; bottom: 50px; left: 0;
+    width: 100%; text-align: center;
+}
+#wrap main #slide_wrap .pagenation span {}
+#wrap main #slide_wrap .pagenation span.active {}
+/* -------------------------------------------- 2행 소개 */
+#wrap main .info { background-color: pink;
+    max-width: 1200px; margin: 0 auto; height: 270px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap main .info a {
+    width: 100px; height: 100px;
+    border: 1px solid #000; border-radius: 50%;
+    text-align: center; line-height: 100px;
+}
+#wrap main .info a:hover {width: 170px; height: 170px; line-height: 170px;}
+#wrap main .info a.active {}
+/* ----------------------------------3행 입양문의 */
+#wrap main .inquiry {background-color: burlywood;
+    padding: 25px 16px;
+}
+#wrap main .inquiry h2 {}
+#wrap main .inquiry #adoption_frm {
+    display: flex; flex-flow: column nowrap; gap: 10px;
+}
+#wrap main .inquiry #adoption_frm input[name*=n],
+#wrap main .inquiry #adoption_frm textarea#content {
+    background-color: #eee; width: 100%;
+}
+#wrap main .inquiry #adoption_frm textarea#content {}
+#wrap main .inquiry #adoption_frm #inquiry_btn {
+    background-color: #222222; color: #fff;
+}
